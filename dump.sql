@@ -40,7 +40,7 @@ CREATE TABLE `barang` (
 
 LOCK TABLES `barang` WRITE;
 /*!40000 ALTER TABLE `barang` DISABLE KEYS */;
-INSERT INTO `barang` VALUES (1,'1111','Laptop','Eletronik','Lenovo',10),(2,'2222','MacBook','Eletronik','Apple',10),(3,'3333','Terminal','Eletronik','Robot',50);
+INSERT INTO `barang` VALUES (1,'1212','MacBook','Eletronik','Apple',100);
 /*!40000 ALTER TABLE `barang` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -106,7 +106,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'0001','Daffa Admin','Pelajar','Admin','admin123','admin'),(2,'0002','Daffa Member','Pelajar','Member','member123','member');
+INSERT INTO `user` VALUES (1,'0001','Roy Admin','Pelajar','Admin','admin123','admin'),(2,'0002','Roy Member','Pelajar','Member','member123','member');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
