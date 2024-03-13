@@ -55,7 +55,7 @@
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
                     <h1 class="display-4">Halo <?php echo $nama;?></h1>
-                    <p class="lead">Terima kasih telah mengunjungi situs web kami. Kami sangat menghargai kehadiran Anda di sini. Semoga Anda menemukan informasi yang berguna dan menarik selama menjelajahi halaman kami. Jangan ragu untuk menjelajahi konten kami dan jangan sungkan untuk menghubungi kami jika Anda memiliki pertanyaan atau masukan. Sekali lagi, selamat datang!</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam laborum maxime ipsum nostrum blanditiis neque cum repellat vero, pariatur fugit aspernatur, labore similique dignissimos iusto! Quas tenetur aut corporis modi illo beatae delectus dolore ab distinctio illum sunt soluta rem assumenda, minus voluptas, vero est nobis sed esse voluptatem vitae cum eius nam magni. Possimus, obcaecati repellat ad voluptates magni voluptatibus aperiam dolor perspiciatis voluptas nisi quod tenetur totam dicta veniam ullam quibusdam sed dolore dignissimos pariatur hic! Necessitatibus illo nihil beatae id numquam sequi fugiat aliquid iste aut quibusdam. Sint non excepturi quibusdam quae sit rerum, voluptatibus maiores?</p>
                 </div>
             </div>
             
