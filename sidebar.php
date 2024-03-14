@@ -8,23 +8,29 @@
 
             <li class="nav-item">
                 <a class="nav-link" href="index.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                <i class="fas fa-columns"></i>
                     <span>Dashboard</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="user.php">
-                    <i class="fas fa-fw fa-user-alt"></i>
+                    <i class="fas fa-user-cog"></i>
                     <span>User</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="barang.php">
-                    <i class="fas fa-fw fa-box"></i>
+                <i class="fas fa-sitemap"></i>
                     <span>Barang</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="datapeminjaman.php">
-                    <i class="fas fa-fw fa-database"></i>
+                <i class="fas fa-table"></i>
                     <span>Data Peminjaman</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="barangtersering.php">
+                <i class="fas fa-info"></i>
+                <span>Barang Tersering</span></a>
             </li>
             
             <hr class="sidebar-divider d-none d-md-block">

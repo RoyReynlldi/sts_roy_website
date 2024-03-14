@@ -1,7 +1,6 @@
 <?php
     session_start();
     include "database.php";
-    $nama = $_SESSION['nama'];
 ?>
 
 <!DOCTYPE html>
@@ -54,41 +53,33 @@
             <h1 class="text-dark pb-5">Dashboard Member</h1>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="display-4">Halo <?php echo $nama;?></h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam laborum maxime ipsum nostrum blanditiis neque cum repellat vero, pariatur fugit aspernatur, labore similique dignissimos iusto! Quas tenetur aut corporis modi illo beatae delectus dolore ab distinctio illum sunt soluta rem assumenda, minus voluptas, vero est nobis sed esse voluptatem vitae cum eius nam magni. Possimus, obcaecati repellat ad voluptates magni voluptatibus aperiam dolor perspiciatis voluptas nisi quod tenetur totam dicta veniam ullam quibusdam sed dolore dignissimos pariatur hic! Necessitatibus illo nihil beatae id numquam sequi fugiat aliquid iste aut quibusdam. Sint non excepturi quibusdam quae sit rerum, voluptatibus maiores?</p>
+                    <h1 class="display-4 pb-3">Halo Roy </h1>
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="resource/img/1.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="resource/img/2.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="resource/img/3.jpeg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+            
+        </div>
                 </div>
             </div>
             
-            <!-- Tabel Data Barang Sering Dipinjam -->
-            <div class="card shadow text-dark bg-light mb-4">
-                <div class="card-body py-3">
-                    <h6 class="m-0 font-weight-bold">Data Barang Sering Dipinjam</h6>
-                </div>
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered text-dark" id="dataTable" width="100%" cellspacing="0">
-                            <thead>
-                                <tr>
-                                    <th>Kode Barang</th>
-                                    <th>Jumlah Pinjam</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php 
-                                // Panggil fungsi getBarangSeringDipinjam() dari database.php
-                                $barang_sering_dipinjam = getBarangSeringDipinjam();
-                                foreach ($barang_sering_dipinjam as $barang) : 
-                                ?>
-                                <tr>
-                                    <td><?php echo $barang['kode_barang']; ?></td>
-                                    <td><?php echo $barang['jumlah_pinjam']; ?></td>
-                                </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
         </div>
 
         </div>

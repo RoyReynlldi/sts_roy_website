@@ -45,7 +45,7 @@ if ($_SESSION['status']=="login") {
 
 </head>
 
-<body class="bg-gradient-info">
+<body class="bg-gradient-success">
 
     <div class="container">
 
@@ -72,7 +72,7 @@ if ($_SESSION['status']=="login") {
                                             <input type="password" class="form-control form-control-user"
                                                 id="exampleInputPassword" placeholder="Password" name="password">
                                         </div>
-                                        <input type="submit" name="masuk" class="btn btn-info btn-user btn-block">
+                                        <input type="submit" name="masuk" class="btn btn-success btn-user btn-block">
                                     </form>
                                 </div>
                             </div>

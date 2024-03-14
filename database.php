@@ -84,7 +84,7 @@
     function getBarangSeringDipinjam($limit = 5) {
         global $connect;
     
-        $query = "SELECT kode_barang, COUNT(*) as jumlah_pinjam FROM peminjaman GROUP BY kode_barang ORDER BY jumlah_pinjam DESC LIMIT $limit";
+        $query = "SELECT kode_barang, SUM(jumlah) as jumlah_pinjam FROM peminjaman GROUP BY kode_barang ORDER BY jumlah_pinjam DESC LIMIT $limit";
         $result = mysqli_query($connect, $query);
     
         $barang_sering_dipinjam = array();
@@ -94,4 +94,5 @@
     
         return $barang_sering_dipinjam;
     }
+    
 ?>

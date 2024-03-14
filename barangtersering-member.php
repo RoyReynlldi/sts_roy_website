@@ -35,7 +35,7 @@
             if($_SESSION['status']!="login"){
                 header("location:login.php?msg=belum_login");
             } else{
-                include("sidebar.php");
+                include("sidebar-member.php");
             }
         ?>
 
@@ -45,40 +45,44 @@
 
                 <nav class="navbar navbar-expand navbar-dark bg-light topbar mb-4 static-top shadow">
                     <div class=" container justify-content-end">
-                        <a href="logout.php"><button type="button" class="btn btn-outline-success">Log Out</button></a>
+                        <a href="logout.php"><button type="button" class="btn btn-outline-info">Log Out</button></a>
                     </div>
                 </nav>
 
         <div class="container-fluid ">
-            <h1 class="text-dark pb-5">Dashboard Admin</h1>
-            <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4 pb-3">Halo Roy </h1>
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="resource/img/1.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="resource/img/2.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="resource/img/3.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </button>
-</div>
-            
-        </div>
+            <h1 class="text-dark pb-5">Barang Tersering</h1>
+           
+            <div class="card shadow text-dark bg-light mb-4">
+                <div class="card-body py-3">
+                    <h6 class="m-0 font-weight-bold">Data Barang Sering Dipinjam</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-dark" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Kode Barang</th>
+                                    <th>Jumlah Pinjam</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php 
+                                // Panggil fungsi getBarangSeringDipinjam() dari database.php
+                                $barang_sering_dipinjam = getBarangSeringDipinjam();
+                                foreach ($barang_sering_dipinjam as $barang) : 
+                                ?>
+                                <tr>
+                                    <td><?php echo $barang['kode_barang']; ?></td>
+                                    <td><?php echo $barang['jumlah_pinjam']; ?></td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
+        </div>
+
         </div>
 
     </div>
